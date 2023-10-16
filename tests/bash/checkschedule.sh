@@ -1,0 +1,1 @@
+kubectl get cluster,scan -o wide -n zora-system | grep -w "* 3 * * *"

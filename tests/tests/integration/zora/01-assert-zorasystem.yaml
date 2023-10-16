@@ -1,0 +1,19 @@
+# check if namespace zora-system was created and runnig
+apiVersion: kuttl.dev/v1beta1
+kind: TestAssert
+phase: Running
+commands:
+  - command: kubectl get namespace zora-system
+    ignoreFailure: false
+  - command: chmod +x ./bash/checkschedule.sh
+    ignoreFailure: false
+  - command: sh -c ./bash/checkschedule.sh
+    ignoreFailure: false
+
+    
+---
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: zora-system

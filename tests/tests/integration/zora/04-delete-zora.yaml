@@ -1,0 +1,9 @@
+# Delete resource created with zora
+apiVersion: kuttl.dev/v1beta1
+kind: TestStep
+commands:
+  - command: chmod +x ../../../bash/uninstallzora.sh
+    ignoreFailure: false
+  - command: sh -c ../../../bash/uninstallzora.sh
+    ignoreFailure: false  
+

@@ -1,0 +1,5 @@
+# Not should be zora-system. Test errors define states that should not be reached.
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: zora-system
