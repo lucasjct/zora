@@ -4,5 +4,5 @@ startKIND: true
 kindNodeCache: false
 testDirs:
 - ./tests/integration/
-timeout: 3600
+timeout: 60
 artifactsDir: ./output/

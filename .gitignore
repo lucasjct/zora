@@ -18,6 +18,10 @@ Dockerfile.cross
 
 !vendor/**/zz_generated.*
 
+# KUTTL files output from test and kubeconfig
+./tests/output
+./tests/kubeconfig
+
 # editor and IDE paraphernalia
 .idea
 *.swp
