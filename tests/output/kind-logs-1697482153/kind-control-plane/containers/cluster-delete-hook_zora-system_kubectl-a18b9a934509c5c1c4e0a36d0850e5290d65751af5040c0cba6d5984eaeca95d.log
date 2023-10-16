@@ -1,3 +1,0 @@
-2023-10-16T18:48:53.373752408Z stdout F cluster.zora.undistro.io "cluster" deleted
-2023-10-16T18:48:53.378027687Z stderr F E1016 18:48:53.377844       1 reflector.go:147] vendor/k8s.io/client-go/tools/watch/informerwatcher.go:146: Failed to watch *unstructured.Unstructured: unknown
-2023-10-16T18:48:54.857179703Z stderr F E1016 18:48:54.857060       1 reflector.go:147] vendor/k8s.io/client-go/tools/watch/informerwatcher.go:146: Failed to watch *unstructured.Unstructured: unknown

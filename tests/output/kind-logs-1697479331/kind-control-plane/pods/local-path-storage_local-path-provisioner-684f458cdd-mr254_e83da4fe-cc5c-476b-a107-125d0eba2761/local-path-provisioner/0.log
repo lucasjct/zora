@@ -1,4 +1,0 @@
-2023-10-16T18:00:54.780073251Z stderr F time="2023-10-16T18:00:54Z" level=debug msg="Applied config: {\"nodePathMap\":[{\"node\":\"DEFAULT_PATH_FOR_NON_LISTED_NODES\",\"paths\":[\"/var/local-path-provisioner\"]}]}" 
-2023-10-16T18:00:54.780834341Z stderr F time="2023-10-16T18:00:54Z" level=debug msg="Provisioner started" 
-2023-10-16T18:00:54.780845965Z stderr F I1016 18:00:54.780593       1 controller.go:773] Starting provisioner controller rancher.io/local-path_local-path-provisioner-684f458cdd-mr254_eab70200-59c3-4c64-84be-bc53cbe01ecb!
-2023-10-16T18:00:54.88144236Z stderr F I1016 18:00:54.881389       1 controller.go:822] Started provisioner controller rancher.io/local-path_local-path-provisioner-684f458cdd-mr254_eab70200-59c3-4c64-84be-bc53cbe01ecb!
