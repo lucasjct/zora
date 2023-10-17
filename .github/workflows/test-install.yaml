@@ -27,13 +27,13 @@ jobs:
       - run: echo ${{ steps.kubectl.outputs.kubectl-version }} # Fixed reference to outputs
 
       - name: Set up Krew
-        uses: marcofranssen/setup-krew@v0.3.0 # Changed to setup-krew
+        uses: marcofranssen/setup-kubectl@v0.3.0 # Changed to setup-krew
         with:
           krew-version: latest
           update: true # Added to update Krew
       - run: |
           echo ${{ steps.krew.outputs.krew-version }} # Fixed reference to outputs
-          kubectl krew install aws # Fixed the krew install command
+          kubectl krew install kuttl
 
       - name: Run Kuttl tests
         run: |
