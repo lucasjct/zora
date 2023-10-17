@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Install Zora through Helm 
+helm repo add stable https://charts.undistro.io
 helm repo update undistro
 helm upgrade --install zora undistro/zora \
   -n zora-system \
