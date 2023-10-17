@@ -11,13 +11,24 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Kind
         run: |
           curl -Lo kind https://kind.sigs.k8s.io/dl/v0.11.1/kind-linux-amd64
           chmod +x kind
           sudo mv kind /usr/local/bin/
+
+
+      - name: Install Kubectl
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
+          curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+          sudo add-apt-repository "deb https://packages.cloud.google.com/apt kubernetes-xenial main"
+          sudo apt-get update
+          sudo apt-get install -y kubectl
+
 
       - name: Set up Krew
         run: |
