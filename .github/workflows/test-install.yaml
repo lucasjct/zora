@@ -24,10 +24,9 @@ jobs:
         with:
           kubectl-version: latest
         id: kubectl
-      - run: echo ${{ steps.kubectl.outputs.kubectl-version }} # Fixed reference to outputs
-
+      - run: echo ${{ steps.kubectl.outputs.kubectl-version }}
       - name: Set up Krew
-        uses: marcofranssen/setup-kubectl@v0.3.0 # Changed to setup-krew
+        uses: marcofranssen/setup-kubectl@v0.3.0
         with:
           krew-version: latest
           update: true # Added to update Krew
