@@ -20,20 +20,23 @@ jobs:
           sudo mv kind /usr/local/bin/
 
       - name: Install Kubectl
-      - uses: marcofranssen/setup-kubectl@v0.3.0
-        id: kubectl
+        uses: marcofranssen/setup-kubectl@v0.3.0
         with:
           kubectl-version: latest
-      - run: echo ${{ steps.kubectl.output.kubectl-version }}
+        id: kubectl
+      - run: echo ${{ steps.kubectl.outputs.kubectl-version }} # Fixed reference to outputs
 
       - name: Set up Krew
-      - uses: marcofranssen/setup-kubectl@v0.3.0
+        uses: marcofranssen/setup-krew@v0.3.0 # Changed to setup-krew
         with:
-          enable-plugins: true
-      - run: echo ${{ steps.kubectl.output.krew-version }}
-      - run: kubectl krew install aws-auth
+          krew-version: latest
+          update: true # Added to update Krew
+      - run: |
+          echo ${{ steps.krew.outputs.krew-version }} # Fixed reference to outputs
+          kubectl krew install aws # Fixed the krew install command
 
       - name: Run Kuttl tests
         run: |
           # Replace with your test command
-          cd zora/tests && kubectl kuttl test
+          cd zora/tests
+          kubectl kuttl test
