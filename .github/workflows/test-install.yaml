@@ -19,35 +19,19 @@ jobs:
           chmod +x kind
           sudo mv kind /usr/local/bin/
 
-
       - name: Install Kubectl
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
-          curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
-          sudo add-apt-repository "deb https://packages.cloud.google.com/apt kubernetes-xenial main"
-          sudo apt-get update
-          sudo apt-get install -y kubectl
-
+      - uses: marcofranssen/setup-kubectl@v0.3.0
+        id: kubectl
+        with:
+          kubectl-version: latest
+      - run: echo ${{ steps.kubectl.output.kubectl-version }}
 
       - name: Set up Krew
-        run: |
-         (
-          set -x; cd "$(mktemp -d)" &&
-          OS="$(uname | tr '[:upper:]' '[:lower:]')" &&
-          ARCH="$(uname -m | sed -e 's/x86_64/amd64/' -e 's/\(arm\)\(64\)\?.*/\1\2/' -e 's/aarch64$/arm64/')" &&
-          KREW="krew-${OS}_${ARCH}" &&
-          curl -fsSLO "https://github.com/kubernetes-sigs/krew/releases/latest/download/${KREW}.tar.gz" &&
-          tar zxvf "${KREW}.tar.gz" &&
-          ./"${KREW}" install krew
-          )
-
-          export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
-
-      - name: Set up Kuttl
-        run: |
-          kubectl krew install kuttl
-          kubectl kuttl version
+      - uses: marcofranssen/setup-kubectl@v0.3.0
+        with:
+          enable-plugins: true
+      - run: echo ${{ steps.kubectl.output.krew-version }}
+      - run: kubectl krew install aws-auth
 
       - name: Run Kuttl tests
         run: |
