@@ -36,7 +36,4 @@ jobs:
           kubectl krew install kuttl
 
       - name: Run Kuttl tests
-        run: |
-          # Replace with your test command
-          cd zora/tests
-          kubectl kuttl test
+        run: make test-installing
