@@ -1,4 +1,4 @@
-name: Kuttl Test
+name: test install zora
 
 on:
   push:
