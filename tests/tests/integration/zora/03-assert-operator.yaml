@@ -7,4 +7,4 @@ commands:
   - command: chmod +x ./bash/checkoperator.sh
     ignoreFailure: false
   - command: sh -c ./bash/checkoperator.sh
-    ignoreFailure: false
+    ignoreFailure: false   

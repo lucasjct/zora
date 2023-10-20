@@ -4,4 +4,4 @@ kind: Pod
 metadata:
   name: zora-operator
 status:
-  phase: Running
+  phase: Succeeded

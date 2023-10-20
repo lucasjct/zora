@@ -5,5 +5,5 @@ commands:
   - command: chmod +x ../../../bash/uninstallzora.sh
     ignoreFailure: false
   - command: sh -c ../../../bash/uninstallzora.sh
-    ignoreFailure: false  
+    ignoreFailure: false
 
