@@ -1,1 +1,0 @@
-2023-11-08T00:53:01.26351182Z stderr F E1108 00:53:01.263372       1 run.go:74] "command failed" err="failed complete: too many open files"

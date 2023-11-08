@@ -1,1 +1,0 @@
-2023-11-08T00:52:44.483029551Z stderr F {"level":"info","ts":"2023-11-08T00:52:44Z","logger":"controller-runtime.metrics","msg":"Metrics server is starting to listen","addr":"127.0.0.1:8080"}
