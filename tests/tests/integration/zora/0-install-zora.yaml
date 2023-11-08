@@ -1,8 +1,0 @@
-# Install zora
-apiVersion: kuttl.dev/v1beta1
-kind: TestStep
-commands:
-  - command: chmod +x ../../../bash/install-zora.sh
-    ignoreFailure: false
-  - command: sh -c ../../../bash/install-zora.sh
-    ignoreFailure: false

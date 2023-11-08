@@ -1,0 +1,23 @@
+2023-11-07T19:38:15.191722256Z stderr F I1107 19:38:15.191546       1 main.go:316] probe TCP address kind-control-plane:6443
+2023-11-07T19:38:15.194473153Z stderr F I1107 19:38:15.194401       1 main.go:102] connected to apiserver: https://kind-control-plane:6443
+2023-11-07T19:38:15.194497184Z stderr F I1107 19:38:15.194438       1 main.go:107] hostIP = 172.18.0.3
+2023-11-07T19:38:15.19450154Z stderr F podIP = 172.18.0.3
+2023-11-07T19:38:15.194587343Z stderr F I1107 19:38:15.194546       1 main.go:116] setting mtu 1500 for CNI 
+2023-11-07T19:38:15.194648981Z stderr F I1107 19:38:15.194599       1 main.go:146] kindnetd IP family: "ipv4"
+2023-11-07T19:38:15.194659541Z stderr F I1107 19:38:15.194624       1 main.go:150] noMask IPv4 subnets: [10.244.0.0/16]
+2023-11-07T19:38:15.488560894Z stderr F I1107 19:38:15.488435       1 main.go:223] Handling node with IPs: map[172.18.0.3:{}]
+2023-11-07T19:38:15.488580822Z stderr F I1107 19:38:15.488468       1 main.go:227] handling current node
+2023-11-07T19:38:25.895597936Z stderr F I1107 19:38:25.892434       1 main.go:223] Handling node with IPs: map[172.18.0.3:{}]
+2023-11-07T19:38:25.896794675Z stderr F I1107 19:38:25.892461       1 main.go:227] handling current node
+2023-11-07T19:38:35.978345795Z stderr F I1107 19:38:35.970950       1 main.go:223] Handling node with IPs: map[172.18.0.3:{}]
+2023-11-07T19:38:35.979859768Z stderr F I1107 19:38:35.970995       1 main.go:227] handling current node
+2023-11-07T19:38:46.060207062Z stderr F I1107 19:38:46.055991       1 main.go:223] Handling node with IPs: map[172.18.0.3:{}]
+2023-11-07T19:38:46.060789015Z stderr F I1107 19:38:46.056025       1 main.go:227] handling current node
+2023-11-07T19:38:56.112014748Z stderr F I1107 19:38:56.106625       1 main.go:223] Handling node with IPs: map[172.18.0.3:{}]
+2023-11-07T19:38:56.113558684Z stderr F I1107 19:38:56.106667       1 main.go:227] handling current node
+2023-11-07T19:39:06.181130596Z stderr F I1107 19:39:06.180894       1 main.go:223] Handling node with IPs: map[172.18.0.3:{}]
+2023-11-07T19:39:06.18205469Z stderr F I1107 19:39:06.180944       1 main.go:227] handling current node
+2023-11-07T19:39:16.196779316Z stderr F I1107 19:39:16.196571       1 main.go:223] Handling node with IPs: map[172.18.0.3:{}]
+2023-11-07T19:39:16.197237034Z stderr F I1107 19:39:16.196648       1 main.go:227] handling current node
+2023-11-07T19:39:26.221295657Z stderr F I1107 19:39:26.221111       1 main.go:223] Handling node with IPs: map[172.18.0.3:{}]
+2023-11-07T19:39:26.221972316Z stderr F I1107 19:39:26.221289       1 main.go:227] handling current node

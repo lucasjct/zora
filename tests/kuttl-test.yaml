@@ -1,7 +1,9 @@
 apiVersion: kuttl.dev/v1beta1
 kind: TestSuite
 startKIND: true
-kindNodeCache: false
+commands:
+  - script: sh -c bash/install-zora.sh
+kindNodeCache: true
 testDirs:
 - ./tests/integration/
 timeout: 60

@@ -1,0 +1,8 @@
+# Check if zora-operator exist in zora-system-operator.
+apiVersion: kuttl.dev/v1beta1
+kind: TestAssert
+phase: Running
+commands:
+  - command: kubectl get pods -n zora-system
+  - script: sh -c bash/checkoperator.sh
+    ignoreFailure: true

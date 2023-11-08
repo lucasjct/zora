@@ -1,0 +1,230 @@
+2023-11-07T17:37:54.873890567Z stderr F I1107 17:37:54.873732       1 serving.go:348] Generated self-signed cert in-memory
+2023-11-07T17:37:55.258168202Z stderr F I1107 17:37:55.258072       1 controllermanager.go:178] Version: v1.25.3
+2023-11-07T17:37:55.258185461Z stderr F I1107 17:37:55.258094       1 controllermanager.go:180] "Golang settings" GOGC="" GOMAXPROCS="" GOTRACEBACK=""
+2023-11-07T17:37:55.259347478Z stderr F I1107 17:37:55.259216       1 dynamic_cafile_content.go:157] "Starting controller" name="request-header::/etc/kubernetes/pki/front-proxy-ca.crt"
+2023-11-07T17:37:55.259443042Z stderr F I1107 17:37:55.259405       1 secure_serving.go:210] Serving securely on 127.0.0.1:10257
+2023-11-07T17:37:55.259615047Z stderr F I1107 17:37:55.259590       1 leaderelection.go:248] attempting to acquire leader lease kube-system/kube-controller-manager...
+2023-11-07T17:37:55.259933983Z stderr F I1107 17:37:55.259711       1 tlsconfig.go:240] "Starting DynamicServingCertificateController"
+2023-11-07T17:37:55.259941728Z stderr F I1107 17:37:55.259776       1 dynamic_cafile_content.go:157] "Starting controller" name="client-ca-bundle::/etc/kubernetes/pki/ca.crt"
+2023-11-07T17:37:58.896506376Z stderr F E1107 17:37:58.896406       1 leaderelection.go:330] error retrieving resource lock kube-system/kube-controller-manager: leases.coordination.k8s.io "kube-controller-manager" is forbidden: User "system:kube-controller-manager" cannot get resource "leases" in API group "coordination.k8s.io" in the namespace "kube-system"
+2023-11-07T17:38:01.137564849Z stderr F I1107 17:38:01.137503       1 leaderelection.go:258] successfully acquired lease kube-system/kube-controller-manager
+2023-11-07T17:38:01.137723073Z stderr F I1107 17:38:01.137681       1 event.go:294] "Event occurred" object="kube-system/kube-controller-manager" fieldPath="" kind="Lease" apiVersion="coordination.k8s.io/v1" type="Normal" reason="LeaderElection" message="kind-control-plane_ca95448c-40d0-497f-8dbe-a4433313cafa became leader"
+2023-11-07T17:38:01.14356422Z stderr F I1107 17:38:01.143450       1 shared_informer.go:255] Waiting for caches to sync for tokens
+2023-11-07T17:38:01.147785937Z stderr F I1107 17:38:01.147724       1 controllermanager.go:603] Started "deployment"
+2023-11-07T17:38:01.147866709Z stderr F I1107 17:38:01.147833       1 deployment_controller.go:160] "Starting controller" controller="deployment"
+2023-11-07T17:38:01.14787225Z stderr F I1107 17:38:01.147844       1 shared_informer.go:255] Waiting for caches to sync for deployment
+2023-11-07T17:38:01.152013278Z stderr F I1107 17:38:01.151951       1 controllermanager.go:603] Started "bootstrapsigner"
+2023-11-07T17:38:01.152071288Z stderr F I1107 17:38:01.152042       1 shared_informer.go:255] Waiting for caches to sync for bootstrap_signer
+2023-11-07T17:38:01.155678551Z stderr F I1107 17:38:01.155614       1 node_lifecycle_controller.go:497] Controller will reconcile labels.
+2023-11-07T17:38:01.155699313Z stderr F I1107 17:38:01.155640       1 controllermanager.go:603] Started "nodelifecycle"
+2023-11-07T17:38:01.155750365Z stderr F I1107 17:38:01.155722       1 node_lifecycle_controller.go:532] Sending events to api server.
+2023-11-07T17:38:01.155754974Z stderr F I1107 17:38:01.155741       1 node_lifecycle_controller.go:543] Starting node controller
+2023-11-07T17:38:01.155766429Z stderr F I1107 17:38:01.155747       1 shared_informer.go:255] Waiting for caches to sync for taint
+2023-11-07T17:38:01.159281752Z stderr F I1107 17:38:01.159201       1 controllermanager.go:603] Started "clusterrole-aggregation"
+2023-11-07T17:38:01.159342802Z stderr F I1107 17:38:01.159311       1 clusterroleaggregation_controller.go:194] Starting ClusterRoleAggregator
+2023-11-07T17:38:01.159354672Z stderr F I1107 17:38:01.159339       1 shared_informer.go:255] Waiting for caches to sync for ClusterRoleAggregator
+2023-11-07T17:38:01.173641628Z stderr F I1107 17:38:01.173577       1 controllermanager.go:603] Started "namespace"
+2023-11-07T17:38:01.173669969Z stderr F I1107 17:38:01.173636       1 namespace_controller.go:200] Starting namespace controller
+2023-11-07T17:38:01.173688148Z stderr F I1107 17:38:01.173647       1 shared_informer.go:255] Waiting for caches to sync for namespace
+2023-11-07T17:38:01.177345675Z stderr F I1107 17:38:01.177268       1 controllermanager.go:603] Started "statefulset"
+2023-11-07T17:38:01.177390762Z stderr F I1107 17:38:01.177362       1 stateful_set.go:152] Starting stateful set controller
+2023-11-07T17:38:01.1773954Z stderr F I1107 17:38:01.177371       1 shared_informer.go:255] Waiting for caches to sync for stateful set
+2023-11-07T17:38:01.180830165Z stderr F I1107 17:38:01.180770       1 controllermanager.go:603] Started "csrcleaner"
+2023-11-07T17:38:01.180852035Z stderr F I1107 17:38:01.180835       1 cleaner.go:82] Starting CSR cleaner controller
+2023-11-07T17:38:01.182268463Z stderr F E1107 17:38:01.182209       1 core.go:218] failed to start cloud node lifecycle controller: no cloud provider provided
+2023-11-07T17:38:01.182289123Z stderr F W1107 17:38:01.182221       1 controllermanager.go:581] Skipping "cloud-node-lifecycle"
+2023-11-07T17:38:01.186052629Z stderr F I1107 17:38:01.185989       1 controllermanager.go:603] Started "persistentvolume-binder"
+2023-11-07T17:38:01.186180385Z stderr F I1107 17:38:01.186130       1 pv_controller_base.go:318] Starting persistent volume controller
+2023-11-07T17:38:01.186190846Z stderr F I1107 17:38:01.186137       1 shared_informer.go:255] Waiting for caches to sync for persistent volume
+2023-11-07T17:38:01.189513035Z stderr F I1107 17:38:01.189449       1 controllermanager.go:603] Started "persistentvolume-expander"
+2023-11-07T17:38:01.18953242Z stderr F I1107 17:38:01.189467       1 expand_controller.go:340] Starting expand controller
+2023-11-07T17:38:01.189536349Z stderr F I1107 17:38:01.189475       1 shared_informer.go:255] Waiting for caches to sync for expand
+2023-11-07T17:38:01.244463342Z stderr F I1107 17:38:01.244399       1 shared_informer.go:262] Caches are synced for tokens
+2023-11-07T17:38:01.341621543Z stderr F I1107 17:38:01.341499       1 controllermanager.go:603] Started "pvc-protection"
+2023-11-07T17:38:01.341673004Z stderr F I1107 17:38:01.341591       1 pvc_protection_controller.go:103] "Starting PVC protection controller"
+2023-11-07T17:38:01.341682395Z stderr F I1107 17:38:01.341618       1 shared_informer.go:255] Waiting for caches to sync for PVC protection
+2023-11-07T17:38:01.490512218Z stderr F I1107 17:38:01.490443       1 controllermanager.go:603] Started "root-ca-cert-publisher"
+2023-11-07T17:38:01.49053418Z stderr F I1107 17:38:01.490477       1 publisher.go:107] Starting root CA certificate configmap publisher
+2023-11-07T17:38:01.490537315Z stderr F I1107 17:38:01.490483       1 shared_informer.go:255] Waiting for caches to sync for crt configmap
+2023-11-07T17:38:01.795284045Z stderr F I1107 17:38:01.794363       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for jobs.batch
+2023-11-07T17:38:01.795321702Z stderr F I1107 17:38:01.795297       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for networkpolicies.networking.k8s.io
+2023-11-07T17:38:01.795553085Z stderr F I1107 17:38:01.795528       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for limitranges
+2023-11-07T17:38:01.795564766Z stderr F I1107 17:38:01.795544       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for statefulsets.apps
+2023-11-07T17:38:01.795571395Z stderr F I1107 17:38:01.795559       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for leases.coordination.k8s.io
+2023-11-07T17:38:01.795599267Z stderr F I1107 17:38:01.795585       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for endpoints
+2023-11-07T17:38:01.795661415Z stderr F I1107 17:38:01.795636       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for serviceaccounts
+2023-11-07T17:38:01.795683544Z stderr F I1107 17:38:01.795665       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for deployments.apps
+2023-11-07T17:38:01.795702427Z stderr F I1107 17:38:01.795686       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for poddisruptionbudgets.policy
+2023-11-07T17:38:01.795720637Z stderr F I1107 17:38:01.795707       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for ingresses.networking.k8s.io
+2023-11-07T17:38:01.795735267Z stderr F I1107 17:38:01.795719       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for roles.rbac.authorization.k8s.io
+2023-11-07T17:38:01.795750529Z stderr F I1107 17:38:01.795734       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for endpointslices.discovery.k8s.io
+2023-11-07T17:38:01.795767916Z stderr F I1107 17:38:01.795752       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for horizontalpodautoscalers.autoscaling
+2023-11-07T17:38:01.7957829Z stderr F I1107 17:38:01.795769       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for cronjobs.batch
+2023-11-07T17:38:01.795798751Z stderr F I1107 17:38:01.795786       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for rolebindings.rbac.authorization.k8s.io
+2023-11-07T17:38:01.795821648Z stderr F I1107 17:38:01.795805       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for csistoragecapacities.storage.k8s.io
+2023-11-07T17:38:01.795829992Z stderr F I1107 17:38:01.795818       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for podtemplates
+2023-11-07T17:38:01.795862715Z stderr F I1107 17:38:01.795849       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for daemonsets.apps
+2023-11-07T17:38:01.795869365Z stderr F I1107 17:38:01.795858       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for replicasets.apps
+2023-11-07T17:38:01.795881441Z stderr F I1107 17:38:01.795867       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for controllerrevisions.apps
+2023-11-07T17:38:01.795897443Z stderr F I1107 17:38:01.795881       1 controllermanager.go:603] Started "resourcequota"
+2023-11-07T17:38:01.79590146Z stderr F I1107 17:38:01.795882       1 resource_quota_controller.go:277] Starting resource quota controller
+2023-11-07T17:38:01.795909744Z stderr F I1107 17:38:01.795894       1 shared_informer.go:255] Waiting for caches to sync for resource quota
+2023-11-07T17:38:01.795918276Z stderr F I1107 17:38:01.795908       1 resource_quota_monitor.go:295] QuotaMonitor running
+2023-11-07T17:38:02.090115505Z stderr F I1107 17:38:02.090039       1 controllermanager.go:603] Started "horizontalpodautoscaling"
+2023-11-07T17:38:02.090129972Z stderr F I1107 17:38:02.090074       1 horizontal.go:168] Starting HPA controller
+2023-11-07T17:38:02.090132229Z stderr F I1107 17:38:02.090080       1 shared_informer.go:255] Waiting for caches to sync for HPA
+2023-11-07T17:38:02.240316432Z stderr F I1107 17:38:02.240224       1 controllermanager.go:603] Started "ttl"
+2023-11-07T17:38:02.24035327Z stderr F I1107 17:38:02.240276       1 ttl_controller.go:120] Starting TTL controller
+2023-11-07T17:38:02.240356638Z stderr F I1107 17:38:02.240283       1 shared_informer.go:255] Waiting for caches to sync for TTL
+2023-11-07T17:38:02.290640391Z stderr F I1107 17:38:02.290568       1 node_ipam_controller.go:91] Sending events to api server.
+2023-11-07T17:38:12.30386495Z stderr F I1107 17:38:12.303751       1 range_allocator.go:76] Sending events to api server.
+2023-11-07T17:38:12.303912161Z stderr F I1107 17:38:12.303850       1 range_allocator.go:110] No Secondary Service CIDR provided. Skipping filtering out secondary service addresses.
+2023-11-07T17:38:12.303916296Z stderr F I1107 17:38:12.303879       1 controllermanager.go:603] Started "nodeipam"
+2023-11-07T17:38:12.30396447Z stderr F I1107 17:38:12.303928       1 node_ipam_controller.go:154] Starting ipam controller
+2023-11-07T17:38:12.303976449Z stderr F I1107 17:38:12.303939       1 shared_informer.go:255] Waiting for caches to sync for node
+2023-11-07T17:38:12.307899271Z stderr F I1107 17:38:12.307830       1 controllermanager.go:603] Started "ttl-after-finished"
+2023-11-07T17:38:12.307946857Z stderr F I1107 17:38:12.307927       1 ttlafterfinished_controller.go:109] Starting TTL after finished controller
+2023-11-07T17:38:12.30795059Z stderr F I1107 17:38:12.307936       1 shared_informer.go:255] Waiting for caches to sync for TTL after finished
+2023-11-07T17:38:12.313468289Z stderr F I1107 17:38:12.313405       1 garbagecollector.go:154] Starting garbage collector controller
+2023-11-07T17:38:12.313492Z stderr F I1107 17:38:12.313417       1 shared_informer.go:255] Waiting for caches to sync for garbage collector
+2023-11-07T17:38:12.31349415Z stderr F I1107 17:38:12.313421       1 controllermanager.go:603] Started "garbagecollector"
+2023-11-07T17:38:12.313496637Z stderr F I1107 17:38:12.313431       1 graph_builder.go:291] GraphBuilder running
+2023-11-07T17:38:12.317256762Z stderr F I1107 17:38:12.317182       1 controllermanager.go:603] Started "serviceaccount"
+2023-11-07T17:38:12.317287482Z stderr F I1107 17:38:12.317257       1 serviceaccounts_controller.go:117] Starting service account controller
+2023-11-07T17:38:12.317299383Z stderr F I1107 17:38:12.317266       1 shared_informer.go:255] Waiting for caches to sync for service account
+2023-11-07T17:38:12.322381319Z stderr F I1107 17:38:12.322324       1 controllermanager.go:603] Started "endpointslicemirroring"
+2023-11-07T17:38:12.322525478Z stderr F I1107 17:38:12.322492       1 endpointslicemirroring_controller.go:216] Starting EndpointSliceMirroring controller
+2023-11-07T17:38:12.322534529Z stderr F I1107 17:38:12.322503       1 shared_informer.go:255] Waiting for caches to sync for endpoint_slice_mirroring
+2023-11-07T17:38:12.326762501Z stderr F I1107 17:38:12.326673       1 controllermanager.go:603] Started "cronjob"
+2023-11-07T17:38:12.326826575Z stderr F I1107 17:38:12.326769       1 cronjob_controllerv2.go:135] "Starting cronjob controller v2"
+2023-11-07T17:38:12.326830217Z stderr F I1107 17:38:12.326788       1 shared_informer.go:255] Waiting for caches to sync for cronjob
+2023-11-07T17:38:12.328600483Z stderr F I1107 17:38:12.328525       1 certificate_controller.go:112] Starting certificate controller "csrsigning-kubelet-serving"
+2023-11-07T17:38:12.328620928Z stderr F I1107 17:38:12.328544       1 shared_informer.go:255] Waiting for caches to sync for certificate-csrsigning-kubelet-serving
+2023-11-07T17:38:12.328624277Z stderr F I1107 17:38:12.328558       1 dynamic_serving_content.go:132] "Starting controller" name="csr-controller::/etc/kubernetes/pki/ca.crt::/etc/kubernetes/pki/ca.key"
+2023-11-07T17:38:12.328701953Z stderr F I1107 17:38:12.328676       1 certificate_controller.go:112] Starting certificate controller "csrsigning-kubelet-client"
+2023-11-07T17:38:12.3287068Z stderr F I1107 17:38:12.328685       1 shared_informer.go:255] Waiting for caches to sync for certificate-csrsigning-kubelet-client
+2023-11-07T17:38:12.32871804Z stderr F I1107 17:38:12.328701       1 dynamic_serving_content.go:132] "Starting controller" name="csr-controller::/etc/kubernetes/pki/ca.crt::/etc/kubernetes/pki/ca.key"
+2023-11-07T17:38:12.328836644Z stderr F I1107 17:38:12.328810       1 certificate_controller.go:112] Starting certificate controller "csrsigning-kube-apiserver-client"
+2023-11-07T17:38:12.328842393Z stderr F I1107 17:38:12.328818       1 shared_informer.go:255] Waiting for caches to sync for certificate-csrsigning-kube-apiserver-client
+2023-11-07T17:38:12.32885662Z stderr F I1107 17:38:12.328838       1 dynamic_serving_content.go:132] "Starting controller" name="csr-controller::/etc/kubernetes/pki/ca.crt::/etc/kubernetes/pki/ca.key"
+2023-11-07T17:38:12.32895827Z stderr F I1107 17:38:12.328930       1 controllermanager.go:603] Started "csrsigning"
+2023-11-07T17:38:12.328966408Z stderr F W1107 17:38:12.328943       1 core.go:232] configure-cloud-routes is set, but no cloud provider specified. Will not configure cloud provider routes.
+2023-11-07T17:38:12.328984542Z stderr F W1107 17:38:12.328950       1 controllermanager.go:581] Skipping "route"
+2023-11-07T17:38:12.329059248Z stderr F I1107 17:38:12.329037       1 certificate_controller.go:112] Starting certificate controller "csrsigning-legacy-unknown"
+2023-11-07T17:38:12.32906261Z stderr F I1107 17:38:12.329045       1 shared_informer.go:255] Waiting for caches to sync for certificate-csrsigning-legacy-unknown
+2023-11-07T17:38:12.329080442Z stderr F I1107 17:38:12.329059       1 dynamic_serving_content.go:132] "Starting controller" name="csr-controller::/etc/kubernetes/pki/ca.crt::/etc/kubernetes/pki/ca.key"
+2023-11-07T17:38:12.332750481Z stderr F I1107 17:38:12.332689       1 controllermanager.go:603] Started "pv-protection"
+2023-11-07T17:38:12.332794996Z stderr F I1107 17:38:12.332768       1 pv_protection_controller.go:79] Starting PV protection controller
+2023-11-07T17:38:12.332805246Z stderr F I1107 17:38:12.332776       1 shared_informer.go:255] Waiting for caches to sync for PV protection
+2023-11-07T17:38:12.33640995Z stderr F I1107 17:38:12.336349       1 controllermanager.go:603] Started "daemonset"
+2023-11-07T17:38:12.336503155Z stderr F I1107 17:38:12.336481       1 daemon_controller.go:291] Starting daemon sets controller
+2023-11-07T17:38:12.336508532Z stderr F I1107 17:38:12.336489       1 shared_informer.go:255] Waiting for caches to sync for daemon sets
+2023-11-07T17:38:12.343342688Z stderr F I1107 17:38:12.343277       1 controllermanager.go:603] Started "podgc"
+2023-11-07T17:38:12.343360531Z stderr F I1107 17:38:12.343304       1 gc_controller.go:99] Starting GC controller
+2023-11-07T17:38:12.343363119Z stderr F I1107 17:38:12.343310       1 shared_informer.go:255] Waiting for caches to sync for GC
+2023-11-07T17:38:12.49588912Z stderr F E1107 17:38:12.495763       1 core.go:92] Failed to start service controller: WARNING: no cloud provider provided, services of type LoadBalancer will fail
+2023-11-07T17:38:12.495916814Z stderr F W1107 17:38:12.495788       1 controllermanager.go:581] Skipping "service"
+2023-11-07T17:38:12.644556675Z stderr F I1107 17:38:12.644486       1 controllermanager.go:603] Started "attachdetach"
+2023-11-07T17:38:12.644578058Z stderr F I1107 17:38:12.644543       1 attach_detach_controller.go:328] Starting attach detach controller
+2023-11-07T17:38:12.644580675Z stderr F I1107 17:38:12.644552       1 shared_informer.go:255] Waiting for caches to sync for attach detach
+2023-11-07T17:38:12.79681591Z stderr F I1107 17:38:12.796682       1 controllermanager.go:603] Started "ephemeral-volume"
+2023-11-07T17:38:12.796868592Z stderr F I1107 17:38:12.796760       1 controller.go:169] Starting ephemeral volume controller
+2023-11-07T17:38:12.796877644Z stderr F I1107 17:38:12.796783       1 shared_informer.go:255] Waiting for caches to sync for ephemeral
+2023-11-07T17:38:12.944938775Z stderr F I1107 17:38:12.944861       1 controllermanager.go:603] Started "endpoint"
+2023-11-07T17:38:12.944966224Z stderr F I1107 17:38:12.944943       1 endpoints_controller.go:182] Starting endpoint controller
+2023-11-07T17:38:12.944970194Z stderr F I1107 17:38:12.944950       1 shared_informer.go:255] Waiting for caches to sync for endpoint
+2023-11-07T17:38:13.094544108Z stderr F I1107 17:38:13.094440       1 controllermanager.go:603] Started "replicationcontroller"
+2023-11-07T17:38:13.094567981Z stderr F I1107 17:38:13.094506       1 replica_set.go:205] Starting replicationcontroller controller
+2023-11-07T17:38:13.09457072Z stderr F I1107 17:38:13.094516       1 shared_informer.go:255] Waiting for caches to sync for ReplicationController
+2023-11-07T17:38:13.244415928Z stderr F I1107 17:38:13.244343       1 controllermanager.go:603] Started "job"
+2023-11-07T17:38:13.244442313Z stderr F I1107 17:38:13.244427       1 job_controller.go:196] Starting job controller
+2023-11-07T17:38:13.244446193Z stderr F I1107 17:38:13.244434       1 shared_informer.go:255] Waiting for caches to sync for job
+2023-11-07T17:38:13.394425989Z stderr F I1107 17:38:13.394363       1 controllermanager.go:603] Started "replicaset"
+2023-11-07T17:38:13.394456604Z stderr F I1107 17:38:13.394441       1 replica_set.go:205] Starting replicaset controller
+2023-11-07T17:38:13.394459291Z stderr F I1107 17:38:13.394448       1 shared_informer.go:255] Waiting for caches to sync for ReplicaSet
+2023-11-07T17:38:13.593711208Z stderr F I1107 17:38:13.593624       1 controllermanager.go:603] Started "disruption"
+2023-11-07T17:38:13.593739758Z stderr F I1107 17:38:13.593685       1 disruption.go:421] Sending events to api server.
+2023-11-07T17:38:13.593742548Z stderr F I1107 17:38:13.593715       1 disruption.go:432] Starting disruption controller
+2023-11-07T17:38:13.593746616Z stderr F I1107 17:38:13.593721       1 shared_informer.go:255] Waiting for caches to sync for disruption
+2023-11-07T17:38:13.643563422Z stderr F I1107 17:38:13.643497       1 controllermanager.go:603] Started "csrapproving"
+2023-11-07T17:38:13.643582662Z stderr F I1107 17:38:13.643534       1 certificate_controller.go:112] Starting certificate controller "csrapproving"
+2023-11-07T17:38:13.643584799Z stderr F I1107 17:38:13.643540       1 shared_informer.go:255] Waiting for caches to sync for certificate-csrapproving
+2023-11-07T17:38:13.794713122Z stderr F I1107 17:38:13.794641       1 controllermanager.go:603] Started "tokencleaner"
+2023-11-07T17:38:13.794734777Z stderr F I1107 17:38:13.794695       1 tokencleaner.go:118] Starting token cleaner controller
+2023-11-07T17:38:13.794737251Z stderr F I1107 17:38:13.794701       1 shared_informer.go:255] Waiting for caches to sync for token_cleaner
+2023-11-07T17:38:13.794739902Z stderr F I1107 17:38:13.794707       1 shared_informer.go:262] Caches are synced for token_cleaner
+2023-11-07T17:38:13.944663171Z stderr F I1107 17:38:13.944575       1 controllermanager.go:603] Started "endpointslice"
+2023-11-07T17:38:13.944713108Z stderr F I1107 17:38:13.944694       1 endpointslice_controller.go:261] Starting endpoint slice controller
+2023-11-07T17:38:13.944716544Z stderr F I1107 17:38:13.944702       1 shared_informer.go:255] Waiting for caches to sync for endpoint_slice
+2023-11-07T17:38:13.946440415Z stderr F I1107 17:38:13.946359       1 shared_informer.go:255] Waiting for caches to sync for resource quota
+2023-11-07T17:38:13.953139439Z stderr F W1107 17:38:13.952991       1 actual_state_of_world.go:541] Failed to update statusUpdateNeeded field in actual state of world: Failed to set statusUpdateNeeded to needed true, because nodeName="kind-control-plane" does not exist
+2023-11-07T17:38:13.959117655Z stderr F I1107 17:38:13.959036       1 shared_informer.go:255] Waiting for caches to sync for garbage collector
+2023-11-07T17:38:13.959851699Z stderr F I1107 17:38:13.959798       1 shared_informer.go:262] Caches are synced for ClusterRoleAggregator
+2023-11-07T17:38:13.977957513Z stderr F I1107 17:38:13.977900       1 shared_informer.go:262] Caches are synced for stateful set
+2023-11-07T17:38:13.987410215Z stderr F I1107 17:38:13.987240       1 shared_informer.go:262] Caches are synced for persistent volume
+2023-11-07T17:38:13.989693316Z stderr F I1107 17:38:13.989588       1 shared_informer.go:262] Caches are synced for expand
+2023-11-07T17:38:13.990980922Z stderr F I1107 17:38:13.990846       1 shared_informer.go:262] Caches are synced for HPA
+2023-11-07T17:38:13.994821486Z stderr F I1107 17:38:13.994707       1 shared_informer.go:262] Caches are synced for ReplicaSet
+2023-11-07T17:38:13.997089659Z stderr F I1107 17:38:13.996981       1 shared_informer.go:262] Caches are synced for ephemeral
+2023-11-07T17:38:14.004432601Z stderr F I1107 17:38:14.004297       1 shared_informer.go:262] Caches are synced for node
+2023-11-07T17:38:14.004481417Z stderr F I1107 17:38:14.004381       1 range_allocator.go:166] Starting range CIDR allocator
+2023-11-07T17:38:14.004490569Z stderr F I1107 17:38:14.004396       1 shared_informer.go:255] Waiting for caches to sync for cidrallocator
+2023-11-07T17:38:14.004497824Z stderr F I1107 17:38:14.004417       1 shared_informer.go:262] Caches are synced for cidrallocator
+2023-11-07T17:38:14.008249864Z stderr F I1107 17:38:14.008100       1 shared_informer.go:262] Caches are synced for TTL after finished
+2023-11-07T17:38:14.011863953Z stderr F I1107 17:38:14.011719       1 range_allocator.go:367] Set node kind-control-plane PodCIDR to [10.244.0.0/24]
+2023-11-07T17:38:14.023408633Z stderr F I1107 17:38:14.023329       1 shared_informer.go:262] Caches are synced for endpoint_slice_mirroring
+2023-11-07T17:38:14.027619381Z stderr F I1107 17:38:14.027557       1 shared_informer.go:262] Caches are synced for cronjob
+2023-11-07T17:38:14.028692387Z stderr F I1107 17:38:14.028633       1 shared_informer.go:262] Caches are synced for certificate-csrsigning-kubelet-serving
+2023-11-07T17:38:14.029789965Z stderr F I1107 17:38:14.029750       1 shared_informer.go:262] Caches are synced for certificate-csrsigning-legacy-unknown
+2023-11-07T17:38:14.029801762Z stderr F I1107 17:38:14.029788       1 shared_informer.go:262] Caches are synced for certificate-csrsigning-kubelet-client
+2023-11-07T17:38:14.029809959Z stderr F I1107 17:38:14.029798       1 shared_informer.go:262] Caches are synced for certificate-csrsigning-kube-apiserver-client
+2023-11-07T17:38:14.032891604Z stderr F I1107 17:38:14.032867       1 shared_informer.go:262] Caches are synced for PV protection
+2023-11-07T17:38:14.037137049Z stderr F I1107 17:38:14.037069       1 shared_informer.go:262] Caches are synced for daemon sets
+2023-11-07T17:38:14.041340822Z stderr F I1107 17:38:14.041298       1 shared_informer.go:262] Caches are synced for TTL
+2023-11-07T17:38:14.042083355Z stderr F I1107 17:38:14.042029       1 shared_informer.go:262] Caches are synced for PVC protection
+2023-11-07T17:38:14.043939198Z stderr F I1107 17:38:14.043852       1 shared_informer.go:262] Caches are synced for GC
+2023-11-07T17:38:14.04395577Z stderr F I1107 17:38:14.043891       1 shared_informer.go:262] Caches are synced for certificate-csrapproving
+2023-11-07T17:38:14.045094055Z stderr F I1107 17:38:14.045025       1 shared_informer.go:262] Caches are synced for job
+2023-11-07T17:38:14.045104557Z stderr F I1107 17:38:14.045044       1 shared_informer.go:262] Caches are synced for endpoint_slice
+2023-11-07T17:38:14.045113592Z stderr F I1107 17:38:14.045078       1 shared_informer.go:262] Caches are synced for attach detach
+2023-11-07T17:38:14.04516755Z stderr F I1107 17:38:14.045088       1 shared_informer.go:262] Caches are synced for endpoint
+2023-11-07T17:38:14.04852596Z stderr F I1107 17:38:14.048412       1 shared_informer.go:262] Caches are synced for deployment
+2023-11-07T17:38:14.0527134Z stderr F I1107 17:38:14.052611       1 shared_informer.go:262] Caches are synced for bootstrap_signer
+2023-11-07T17:38:14.056397286Z stderr F I1107 17:38:14.056293       1 shared_informer.go:262] Caches are synced for taint
+2023-11-07T17:38:14.056425078Z stderr F I1107 17:38:14.056342       1 taint_manager.go:204] "Starting NoExecuteTaintManager"
+2023-11-07T17:38:14.05643442Z stderr F I1107 17:38:14.056367       1 node_lifecycle_controller.go:1443] Initializing eviction metric for zone: 
+2023-11-07T17:38:14.056437561Z stderr F I1107 17:38:14.056401       1 taint_manager.go:209] "Sending events to api server"
+2023-11-07T17:38:14.05644326Z stderr F W1107 17:38:14.056427       1 node_lifecycle_controller.go:1058] Missing timestamp for Node kind-control-plane. Assuming now as a timestamp.
+2023-11-07T17:38:14.056488883Z stderr F I1107 17:38:14.056454       1 node_lifecycle_controller.go:1209] Controller detected that all Nodes are not-Ready. Entering master disruption mode.
+2023-11-07T17:38:14.056518595Z stderr F I1107 17:38:14.056497       1 event.go:294] "Event occurred" object="kind-control-plane" fieldPath="" kind="Node" apiVersion="v1" type="Normal" reason="RegisteredNode" message="Node kind-control-plane event: Registered Node kind-control-plane in Controller"
+2023-11-07T17:38:14.090908164Z stderr F I1107 17:38:14.090728       1 shared_informer.go:262] Caches are synced for crt configmap
+2023-11-07T17:38:14.117437666Z stderr F I1107 17:38:14.117365       1 shared_informer.go:262] Caches are synced for service account
+2023-11-07T17:38:14.174774672Z stderr F I1107 17:38:14.174633       1 shared_informer.go:262] Caches are synced for namespace
+2023-11-07T17:38:14.194124801Z stderr F I1107 17:38:14.193998       1 shared_informer.go:262] Caches are synced for disruption
+2023-11-07T17:38:14.194753659Z stderr F I1107 17:38:14.194659       1 shared_informer.go:262] Caches are synced for ReplicationController
+2023-11-07T17:38:14.196826819Z stderr F I1107 17:38:14.196722       1 shared_informer.go:262] Caches are synced for resource quota
+2023-11-07T17:38:14.246559853Z stderr F I1107 17:38:14.246495       1 shared_informer.go:262] Caches are synced for resource quota
+2023-11-07T17:38:14.40865167Z stderr F I1107 17:38:14.408553       1 event.go:294] "Event occurred" object="kube-system/kube-proxy" fieldPath="" kind="DaemonSet" apiVersion="apps/v1" type="Normal" reason="SuccessfulCreate" message="Created pod: kube-proxy-q2vhd"
+2023-11-07T17:38:14.408685851Z stderr F I1107 17:38:14.408627       1 event.go:294] "Event occurred" object="kube-system/kindnet" fieldPath="" kind="DaemonSet" apiVersion="apps/v1" type="Normal" reason="SuccessfulCreate" message="Created pod: kindnet-568pt"
+2023-11-07T17:38:14.559177702Z stderr F I1107 17:38:14.559101       1 shared_informer.go:262] Caches are synced for garbage collector
+2023-11-07T17:38:14.614464211Z stderr F I1107 17:38:14.614294       1 shared_informer.go:262] Caches are synced for garbage collector
+2023-11-07T17:38:14.614488099Z stderr F I1107 17:38:14.614307       1 garbagecollector.go:163] Garbage collector: all resource monitors have synced. Proceeding to collect garbage
+2023-11-07T17:38:14.699360282Z stderr F I1107 17:38:14.699217       1 event.go:294] "Event occurred" object="local-path-storage/local-path-provisioner" fieldPath="" kind="Deployment" apiVersion="apps/v1" type="Normal" reason="ScalingReplicaSet" message="Scaled up replica set local-path-provisioner-684f458cdd to 1"
+2023-11-07T17:38:14.699475662Z stderr F I1107 17:38:14.699425       1 event.go:294] "Event occurred" object="kube-system/coredns" fieldPath="" kind="Deployment" apiVersion="apps/v1" type="Normal" reason="ScalingReplicaSet" message="Scaled up replica set coredns-565d847f94 to 2"
+2023-11-07T17:38:14.948849348Z stderr F I1107 17:38:14.948709       1 event.go:294] "Event occurred" object="kube-system/coredns-565d847f94" fieldPath="" kind="ReplicaSet" apiVersion="apps/v1" type="Normal" reason="SuccessfulCreate" message="Created pod: coredns-565d847f94-zm9bm"
+2023-11-07T17:38:14.950882572Z stderr F I1107 17:38:14.950779       1 event.go:294] "Event occurred" object="local-path-storage/local-path-provisioner-684f458cdd" fieldPath="" kind="ReplicaSet" apiVersion="apps/v1" type="Normal" reason="SuccessfulCreate" message="Created pod: local-path-provisioner-684f458cdd-nl8wr"
+2023-11-07T17:38:14.953507552Z stderr F I1107 17:38:14.953376       1 event.go:294] "Event occurred" object="kube-system/coredns-565d847f94" fieldPath="" kind="ReplicaSet" apiVersion="apps/v1" type="Normal" reason="SuccessfulCreate" message="Created pod: coredns-565d847f94-zwmdl"
+2023-11-07T17:38:19.964590782Z stderr F I1107 17:38:19.964458       1 event.go:294] "Event occurred" object="zora-system/zora-operator" fieldPath="" kind="Deployment" apiVersion="apps/v1" type="Normal" reason="ScalingReplicaSet" message="Scaled up replica set zora-operator-7d4c76c98f to 1"
+2023-11-07T17:38:19.973121813Z stderr F I1107 17:38:19.972844       1 event.go:294] "Event occurred" object="zora-system/zora-operator-7d4c76c98f" fieldPath="" kind="ReplicaSet" apiVersion="apps/v1" type="Normal" reason="SuccessfulCreate" message="Created pod: zora-operator-7d4c76c98f-mz8gw"
+2023-11-07T17:38:24.05856639Z stderr F I1107 17:38:24.058472       1 node_lifecycle_controller.go:1236] Controller detected that some Nodes are Ready. Exiting master disruption mode.
+2023-11-07T17:38:31.161295986Z stderr F I1107 17:38:31.161185       1 namespace_controller.go:185] Namespace has been deleted kuttl-test-growing-wahoo
+2023-11-07T17:38:44.251175892Z stderr F I1107 17:38:44.251105       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for clusterissues.zora.undistro.io
+2023-11-07T17:38:44.280687828Z stderr F I1107 17:38:44.251128       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for plugins.zora.undistro.io
+2023-11-07T17:38:44.280710853Z stderr F I1107 17:38:44.251142       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for customchecks.zora.undistro.io
+2023-11-07T17:38:44.280727414Z stderr F I1107 17:38:44.251154       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for clusters.zora.undistro.io
+2023-11-07T17:38:44.28073139Z stderr F I1107 17:38:44.251174       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for vulnerabilityreports.zora.undistro.io
+2023-11-07T17:38:44.280733245Z stderr F I1107 17:38:44.251185       1 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for clusterscans.zora.undistro.io
+2023-11-07T17:38:44.280737811Z stderr F I1107 17:38:44.251223       1 shared_informer.go:255] Waiting for caches to sync for resource quota
+2023-11-07T17:38:44.354040269Z stderr F I1107 17:38:44.353896       1 shared_informer.go:262] Caches are synced for resource quota
+2023-11-07T17:38:44.567244149Z stderr F I1107 17:38:44.567168       1 shared_informer.go:255] Waiting for caches to sync for garbage collector
+2023-11-07T17:38:44.56727394Z stderr F I1107 17:38:44.567196       1 shared_informer.go:262] Caches are synced for garbage collector

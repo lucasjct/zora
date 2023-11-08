@@ -1,0 +1,19 @@
+2023-11-07T22:02:38.382205832Z stderr F Flag --logtostderr has been deprecated, will be removed in a future release, see https://github.com/kubernetes/enhancements/tree/master/keps/sig-instrumentation/2845-deprecate-klog-specific-flags-in-k8s-components
+2023-11-07T22:02:38.382455763Z stderr F W1107 22:02:38.382381       1 kube-rbac-proxy.go:152] 
+2023-11-07T22:02:38.382459914Z stderr F ==== Deprecation Warning ======================
+2023-11-07T22:02:38.382461733Z stderr F 
+2023-11-07T22:02:38.382463805Z stderr F Insecure listen address will be removed.
+2023-11-07T22:02:38.382465657Z stderr F Using --insecure-listen-address won't be possible!
+2023-11-07T22:02:38.382467275Z stderr F 
+2023-11-07T22:02:38.382469124Z stderr F The ability to run kube-rbac-proxy without TLS certificates will be removed.
+2023-11-07T22:02:38.382470867Z stderr F Not using --tls-cert-file and --tls-private-key-file won't be possible!
+2023-11-07T22:02:38.38247241Z stderr F 
+2023-11-07T22:02:38.382474362Z stderr F For more information, please go to https://github.com/brancz/kube-rbac-proxy/issues/187
+2023-11-07T22:02:38.38247598Z stderr F 
+2023-11-07T22:02:38.382477728Z stderr F ===============================================
+2023-11-07T22:02:38.382479381Z stderr F 
+2023-11-07T22:02:38.382481171Z stderr F 		
+2023-11-07T22:02:38.382482957Z stderr F I1107 22:02:38.382445       1 kube-rbac-proxy.go:272] Valid token audiences: 
+2023-11-07T22:02:38.382492872Z stderr F I1107 22:02:38.382475       1 kube-rbac-proxy.go:363] Generating self signed cert as no cert is provided
+2023-11-07T22:02:38.81238654Z stderr F I1107 22:02:38.812306       1 kube-rbac-proxy.go:414] Starting TCP socket on 0.0.0.0:8443
+2023-11-07T22:02:38.812489881Z stderr F I1107 22:02:38.812468       1 kube-rbac-proxy.go:421] Listening securely on 0.0.0.0:8443

@@ -1,0 +1,17 @@
+2023-11-07T22:02:21.684197364Z stderr F I1107 22:02:21.684083       1 main.go:316] probe TCP address kind-control-plane:6443
+2023-11-07T22:02:21.684826195Z stderr F I1107 22:02:21.684794       1 main.go:102] connected to apiserver: https://kind-control-plane:6443
+2023-11-07T22:02:21.684836872Z stderr F I1107 22:02:21.684802       1 main.go:107] hostIP = 172.18.0.3
+2023-11-07T22:02:21.68483936Z stderr F podIP = 172.18.0.3
+2023-11-07T22:02:21.684878648Z stderr F I1107 22:02:21.684865       1 main.go:116] setting mtu 1500 for CNI 
+2023-11-07T22:02:21.684882512Z stderr F I1107 22:02:21.684872       1 main.go:146] kindnetd IP family: "ipv4"
+2023-11-07T22:02:21.684894868Z stderr F I1107 22:02:21.684879       1 main.go:150] noMask IPv4 subnets: [10.244.0.0/16]
+2023-11-07T22:02:21.883974533Z stderr F I1107 22:02:21.883877       1 main.go:223] Handling node with IPs: map[172.18.0.3:{}]
+2023-11-07T22:02:21.8839936Z stderr F I1107 22:02:21.883900       1 main.go:227] handling current node
+2023-11-07T22:02:31.988928769Z stderr F I1107 22:02:31.988869       1 main.go:223] Handling node with IPs: map[172.18.0.3:{}]
+2023-11-07T22:02:31.988950714Z stderr F I1107 22:02:31.988883       1 main.go:227] handling current node
+2023-11-07T22:02:41.996443592Z stderr F I1107 22:02:41.996377       1 main.go:223] Handling node with IPs: map[172.18.0.3:{}]
+2023-11-07T22:02:41.996465381Z stderr F I1107 22:02:41.996390       1 main.go:227] handling current node
+2023-11-07T22:02:52.001382382Z stderr F I1107 22:02:52.001230       1 main.go:223] Handling node with IPs: map[172.18.0.3:{}]
+2023-11-07T22:02:52.001430574Z stderr F I1107 22:02:52.001263       1 main.go:227] handling current node
+2023-11-07T22:03:02.012739547Z stderr F I1107 22:03:02.012677       1 main.go:223] Handling node with IPs: map[172.18.0.3:{}]
+2023-11-07T22:03:02.012762464Z stderr F I1107 22:03:02.012690       1 main.go:227] handling current node

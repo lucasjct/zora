@@ -1,0 +1,21 @@
+2023-11-08T00:52:23.726028824Z stdout F [INFO] plugin/kubernetes: waiting for Kubernetes API before starting server
+2023-11-08T00:52:24.163960125Z stdout F [INFO] plugin/ready: Still waiting on: "kubernetes"
+2023-11-08T00:52:24.226259582Z stdout F [INFO] plugin/kubernetes: waiting for Kubernetes API before starting server
+2023-11-08T00:52:24.725967342Z stdout F [INFO] plugin/kubernetes: waiting for Kubernetes API before starting server
+2023-11-08T00:52:25.165936112Z stdout F [INFO] plugin/ready: Still waiting on: "kubernetes"
+2023-11-08T00:52:25.226374607Z stdout F [INFO] plugin/kubernetes: waiting for Kubernetes API before starting server
+2023-11-08T00:52:25.726270092Z stdout F [INFO] plugin/kubernetes: waiting for Kubernetes API before starting server
+2023-11-08T00:52:26.226712187Z stdout F [INFO] plugin/kubernetes: waiting for Kubernetes API before starting server
+2023-11-08T00:52:26.726097912Z stdout F [INFO] plugin/kubernetes: waiting for Kubernetes API before starting server
+2023-11-08T00:52:27.226274599Z stdout F [INFO] plugin/kubernetes: waiting for Kubernetes API before starting server
+2023-11-08T00:52:27.726720427Z stdout F [INFO] plugin/kubernetes: waiting for Kubernetes API before starting server
+2023-11-08T00:52:28.225979749Z stdout F [WARNING] plugin/kubernetes: starting server with unsynced Kubernetes API
+2023-11-08T00:52:28.226207525Z stdout F .:53
+2023-11-08T00:52:28.226352408Z stdout F [INFO] plugin/reload: Running configuration SHA512 = 591cf328cccc12bc490481273e738df59329c62c0b729d94e8b61db9961c2fa5f046dd37f1cf888b953814040d180f52594972691cd6ff41be96639138a43908
+2023-11-08T00:52:28.226368109Z stdout F CoreDNS-1.9.3
+2023-11-08T00:52:28.226372062Z stdout F linux/amd64, go1.18.2, 45b0a11
+2023-11-08T00:52:32.93087903Z stdout F [INFO] plugin/ready: Still waiting on: "kubernetes"
+2023-11-08T00:52:42.930269431Z stdout F [INFO] plugin/ready: Still waiting on: "kubernetes"
+2023-11-08T00:52:52.930666498Z stdout F [INFO] plugin/ready: Still waiting on: "kubernetes"
+2023-11-08T00:52:53.32667301Z stdout F [WARNING] plugin/kubernetes: Kubernetes API connection failure: Get "https://10.96.0.1:443/version": dial tcp 10.96.0.1:443: i/o timeout
+2023-11-08T00:53:02.930801838Z stdout F [INFO] plugin/ready: Still waiting on: "kubernetes"

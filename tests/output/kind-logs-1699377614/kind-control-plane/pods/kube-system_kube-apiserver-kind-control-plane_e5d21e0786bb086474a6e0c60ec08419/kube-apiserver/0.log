@@ -1,0 +1,127 @@
+2023-11-07T17:19:09.328832211Z stderr F I1107 17:19:09.328624       1 server.go:563] external host was not specified, using 172.18.0.3
+2023-11-07T17:19:09.329154633Z stderr F I1107 17:19:09.329079       1 server.go:161] Version: v1.25.3
+2023-11-07T17:19:09.329160277Z stderr F I1107 17:19:09.329109       1 server.go:163] "Golang settings" GOGC="" GOMAXPROCS="" GOTRACEBACK=""
+2023-11-07T17:19:09.881953625Z stderr F I1107 17:19:09.881894       1 shared_informer.go:255] Waiting for caches to sync for node_authorizer
+2023-11-07T17:19:09.882858825Z stderr F I1107 17:19:09.882814       1 plugins.go:158] Loaded 12 mutating admission controller(s) successfully in the following order: NamespaceLifecycle,LimitRanger,ServiceAccount,NodeRestriction,TaintNodesByCondition,Priority,DefaultTolerationSeconds,DefaultStorageClass,StorageObjectInUseProtection,RuntimeClass,DefaultIngressClass,MutatingAdmissionWebhook.
+2023-11-07T17:19:09.882882496Z stderr F I1107 17:19:09.882825       1 plugins.go:161] Loaded 11 validating admission controller(s) successfully in the following order: LimitRanger,ServiceAccount,PodSecurity,Priority,PersistentVolumeClaimResize,RuntimeClass,CertificateApproval,CertificateSigning,CertificateSubjectRestriction,ValidatingAdmissionWebhook,ResourceQuota.
+2023-11-07T17:19:09.883895144Z stderr F I1107 17:19:09.883857       1 plugins.go:158] Loaded 12 mutating admission controller(s) successfully in the following order: NamespaceLifecycle,LimitRanger,ServiceAccount,NodeRestriction,TaintNodesByCondition,Priority,DefaultTolerationSeconds,DefaultStorageClass,StorageObjectInUseProtection,RuntimeClass,DefaultIngressClass,MutatingAdmissionWebhook.
+2023-11-07T17:19:09.883902665Z stderr F I1107 17:19:09.883869       1 plugins.go:161] Loaded 11 validating admission controller(s) successfully in the following order: LimitRanger,ServiceAccount,PodSecurity,Priority,PersistentVolumeClaimResize,RuntimeClass,CertificateApproval,CertificateSigning,CertificateSubjectRestriction,ValidatingAdmissionWebhook,ResourceQuota.
+2023-11-07T17:19:09.886606753Z stderr F W1107 17:19:09.886554       1 logging.go:59] [core] [Channel #1 SubChannel #2] grpc: addrConn.createTransport failed to connect to {
+2023-11-07T17:19:09.886625971Z stderr F   "Addr": "127.0.0.1:2379",
+2023-11-07T17:19:09.886629573Z stderr F   "ServerName": "127.0.0.1",
+2023-11-07T17:19:09.886633094Z stderr F   "Attributes": null,
+2023-11-07T17:19:09.886636212Z stderr F   "BalancerAttributes": null,
+2023-11-07T17:19:09.886639604Z stderr F   "Type": 0,
+2023-11-07T17:19:09.886644641Z stderr F   "Metadata": null
+2023-11-07T17:19:09.886648377Z stderr F }. Err: connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused"
+2023-11-07T17:19:10.881820544Z stderr F W1107 17:19:10.881767       1 logging.go:59] [core] [Channel #4 SubChannel #6] grpc: addrConn.createTransport failed to connect to {
+2023-11-07T17:19:10.881836608Z stderr F   "Addr": "127.0.0.1:2379",
+2023-11-07T17:19:10.881838792Z stderr F   "ServerName": "127.0.0.1",
+2023-11-07T17:19:10.881840727Z stderr F   "Attributes": null,
+2023-11-07T17:19:10.881842387Z stderr F   "BalancerAttributes": null,
+2023-11-07T17:19:10.881844229Z stderr F   "Type": 0,
+2023-11-07T17:19:10.881845953Z stderr F   "Metadata": null
+2023-11-07T17:19:10.881847859Z stderr F }. Err: connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused"
+2023-11-07T17:19:10.881849644Z stderr F W1107 17:19:10.881774       1 logging.go:59] [core] [Channel #3 SubChannel #5] grpc: addrConn.createTransport failed to connect to {
+2023-11-07T17:19:10.881851427Z stderr F   "Addr": "127.0.0.1:2379",
+2023-11-07T17:19:10.881853126Z stderr F   "ServerName": "127.0.0.1",
+2023-11-07T17:19:10.881854827Z stderr F   "Attributes": null,
+2023-11-07T17:19:10.881856489Z stderr F   "BalancerAttributes": null,
+2023-11-07T17:19:10.881858167Z stderr F   "Type": 0,
+2023-11-07T17:19:10.881859835Z stderr F   "Metadata": null
+2023-11-07T17:19:10.881861539Z stderr F }. Err: connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused"
+2023-11-07T17:19:10.887582981Z stderr F W1107 17:19:10.887527       1 logging.go:59] [core] [Channel #1 SubChannel #2] grpc: addrConn.createTransport failed to connect to {
+2023-11-07T17:19:10.887593942Z stderr F   "Addr": "127.0.0.1:2379",
+2023-11-07T17:19:10.887596109Z stderr F   "ServerName": "127.0.0.1",
+2023-11-07T17:19:10.887597991Z stderr F   "Attributes": null,
+2023-11-07T17:19:10.887599753Z stderr F   "BalancerAttributes": null,
+2023-11-07T17:19:10.887601479Z stderr F   "Type": 0,
+2023-11-07T17:19:10.887603147Z stderr F   "Metadata": null
+2023-11-07T17:19:10.88760505Z stderr F }. Err: connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused"
+2023-11-07T17:19:12.753869077Z stderr F W1107 17:19:12.753780       1 genericapiserver.go:656] Skipping API apiextensions.k8s.io/v1beta1 because it has no resources.
+2023-11-07T17:19:12.754430038Z stderr F I1107 17:19:12.754393       1 instance.go:261] Using reconciler: lease
+2023-11-07T17:19:12.889499135Z stderr F I1107 17:19:12.889399       1 instance.go:574] API group "internal.apiserver.k8s.io" is not enabled, skipping.
+2023-11-07T17:19:13.170008498Z stderr F W1107 17:19:13.169924       1 genericapiserver.go:656] Skipping API authentication.k8s.io/v1beta1 because it has no resources.
+2023-11-07T17:19:13.171324228Z stderr F W1107 17:19:13.171238       1 genericapiserver.go:656] Skipping API authorization.k8s.io/v1beta1 because it has no resources.
+2023-11-07T17:19:13.174085546Z stderr F W1107 17:19:13.173977       1 genericapiserver.go:656] Skipping API autoscaling/v2beta1 because it has no resources.
+2023-11-07T17:19:13.177289812Z stderr F W1107 17:19:13.177187       1 genericapiserver.go:656] Skipping API batch/v1beta1 because it has no resources.
+2023-11-07T17:19:13.178761094Z stderr F W1107 17:19:13.178696       1 genericapiserver.go:656] Skipping API certificates.k8s.io/v1beta1 because it has no resources.
+2023-11-07T17:19:13.180064411Z stderr F W1107 17:19:13.180008       1 genericapiserver.go:656] Skipping API coordination.k8s.io/v1beta1 because it has no resources.
+2023-11-07T17:19:13.180069278Z stderr F W1107 17:19:13.180048       1 genericapiserver.go:656] Skipping API discovery.k8s.io/v1beta1 because it has no resources.
+2023-11-07T17:19:13.183356713Z stderr F W1107 17:19:13.183283       1 genericapiserver.go:656] Skipping API networking.k8s.io/v1beta1 because it has no resources.
+2023-11-07T17:19:13.183369955Z stderr F W1107 17:19:13.183296       1 genericapiserver.go:656] Skipping API networking.k8s.io/v1alpha1 because it has no resources.
+2023-11-07T17:19:13.184632125Z stderr F W1107 17:19:13.184569       1 genericapiserver.go:656] Skipping API node.k8s.io/v1beta1 because it has no resources.
+2023-11-07T17:19:13.184640999Z stderr F W1107 17:19:13.184578       1 genericapiserver.go:656] Skipping API node.k8s.io/v1alpha1 because it has no resources.
+2023-11-07T17:19:13.184643133Z stderr F W1107 17:19:13.184614       1 genericapiserver.go:656] Skipping API policy/v1beta1 because it has no resources.
+2023-11-07T17:19:13.18791981Z stderr F W1107 17:19:13.187828       1 genericapiserver.go:656] Skipping API rbac.authorization.k8s.io/v1beta1 because it has no resources.
+2023-11-07T17:19:13.187972706Z stderr F W1107 17:19:13.187838       1 genericapiserver.go:656] Skipping API rbac.authorization.k8s.io/v1alpha1 because it has no resources.
+2023-11-07T17:19:13.189246822Z stderr F W1107 17:19:13.189189       1 genericapiserver.go:656] Skipping API scheduling.k8s.io/v1beta1 because it has no resources.
+2023-11-07T17:19:13.189251183Z stderr F W1107 17:19:13.189197       1 genericapiserver.go:656] Skipping API scheduling.k8s.io/v1alpha1 because it has no resources.
+2023-11-07T17:19:13.193015225Z stderr F W1107 17:19:13.192895       1 genericapiserver.go:656] Skipping API storage.k8s.io/v1alpha1 because it has no resources.
+2023-11-07T17:19:13.200651412Z stderr F W1107 17:19:13.200491       1 genericapiserver.go:656] Skipping API flowcontrol.apiserver.k8s.io/v1alpha1 because it has no resources.
+2023-11-07T17:19:13.206271605Z stderr F W1107 17:19:13.206072       1 genericapiserver.go:656] Skipping API apps/v1beta2 because it has no resources.
+2023-11-07T17:19:13.20629262Z stderr F W1107 17:19:13.206084       1 genericapiserver.go:656] Skipping API apps/v1beta1 because it has no resources.
+2023-11-07T17:19:13.207850187Z stderr F W1107 17:19:13.207733       1 genericapiserver.go:656] Skipping API admissionregistration.k8s.io/v1beta1 because it has no resources.
+2023-11-07T17:19:13.209124703Z stderr F W1107 17:19:13.209018       1 genericapiserver.go:656] Skipping API events.k8s.io/v1beta1 because it has no resources.
+2023-11-07T17:19:13.209727943Z stderr F I1107 17:19:13.209651       1 plugins.go:158] Loaded 12 mutating admission controller(s) successfully in the following order: NamespaceLifecycle,LimitRanger,ServiceAccount,NodeRestriction,TaintNodesByCondition,Priority,DefaultTolerationSeconds,DefaultStorageClass,StorageObjectInUseProtection,RuntimeClass,DefaultIngressClass,MutatingAdmissionWebhook.
+2023-11-07T17:19:13.209732643Z stderr F I1107 17:19:13.209661       1 plugins.go:161] Loaded 11 validating admission controller(s) successfully in the following order: LimitRanger,ServiceAccount,PodSecurity,Priority,PersistentVolumeClaimResize,RuntimeClass,CertificateApproval,CertificateSigning,CertificateSubjectRestriction,ValidatingAdmissionWebhook,ResourceQuota.
+2023-11-07T17:19:13.223381986Z stderr F W1107 17:19:13.223244       1 genericapiserver.go:656] Skipping API apiregistration.k8s.io/v1beta1 because it has no resources.
+2023-11-07T17:19:14.088845417Z stderr F I1107 17:19:14.088769       1 dynamic_cafile_content.go:157] "Starting controller" name="request-header::/etc/kubernetes/pki/front-proxy-ca.crt"
+2023-11-07T17:19:14.088971367Z stderr F I1107 17:19:14.088926       1 dynamic_cafile_content.go:157] "Starting controller" name="client-ca-bundle::/etc/kubernetes/pki/ca.crt"
+2023-11-07T17:19:14.089035799Z stderr F I1107 17:19:14.089004       1 dynamic_serving_content.go:132] "Starting controller" name="serving-cert::/etc/kubernetes/pki/apiserver.crt::/etc/kubernetes/pki/apiserver.key"
+2023-11-07T17:19:14.089062484Z stderr F I1107 17:19:14.089044       1 secure_serving.go:210] Serving securely on [::]:6443
+2023-11-07T17:19:14.089095628Z stderr F I1107 17:19:14.089076       1 tlsconfig.go:240] "Starting DynamicServingCertificateController"
+2023-11-07T17:19:14.089272695Z stderr F I1107 17:19:14.089229       1 apiservice_controller.go:97] Starting APIServiceRegistrationController
+2023-11-07T17:19:14.089280662Z stderr F I1107 17:19:14.089238       1 cache.go:32] Waiting for caches to sync for APIServiceRegistrationController controller
+2023-11-07T17:19:14.089289643Z stderr F I1107 17:19:14.089256       1 controller.go:80] Starting OpenAPI V3 AggregationController
+2023-11-07T17:19:14.089331613Z stderr F I1107 17:19:14.089304       1 apf_controller.go:300] Starting API Priority and Fairness config controller
+2023-11-07T17:19:14.089399782Z stderr F I1107 17:19:14.089372       1 customresource_discovery_controller.go:209] Starting DiscoveryController
+2023-11-07T17:19:14.089434836Z stderr F I1107 17:19:14.089400       1 dynamic_serving_content.go:132] "Starting controller" name="aggregator-proxy-cert::/etc/kubernetes/pki/front-proxy-client.crt::/etc/kubernetes/pki/front-proxy-client.key"
+2023-11-07T17:19:14.08959362Z stderr F I1107 17:19:14.089550       1 available_controller.go:491] Starting AvailableConditionController
+2023-11-07T17:19:14.089606537Z stderr F I1107 17:19:14.089560       1 cache.go:32] Waiting for caches to sync for AvailableConditionController controller
+2023-11-07T17:19:14.089615195Z stderr F I1107 17:19:14.089576       1 cluster_authentication_trust_controller.go:440] Starting cluster_authentication_trust_controller controller
+2023-11-07T17:19:14.089618221Z stderr F I1107 17:19:14.089579       1 controller.go:83] Starting OpenAPI AggregationController
+2023-11-07T17:19:14.089620755Z stderr F I1107 17:19:14.089583       1 shared_informer.go:255] Waiting for caches to sync for cluster_authentication_trust_controller
+2023-11-07T17:19:14.089711123Z stderr F I1107 17:19:14.089671       1 controller.go:85] Starting OpenAPI controller
+2023-11-07T17:19:14.089918641Z stderr F I1107 17:19:14.089883       1 autoregister_controller.go:141] Starting autoregister controller
+2023-11-07T17:19:14.089929669Z stderr F I1107 17:19:14.089890       1 cache.go:32] Waiting for caches to sync for autoregister controller
+2023-11-07T17:19:14.089937203Z stderr F I1107 17:19:14.089924       1 dynamic_cafile_content.go:157] "Starting controller" name="client-ca-bundle::/etc/kubernetes/pki/ca.crt"
+2023-11-07T17:19:14.101052197Z stderr F I1107 17:19:14.100937       1 dynamic_cafile_content.go:157] "Starting controller" name="request-header::/etc/kubernetes/pki/front-proxy-ca.crt"
+2023-11-07T17:19:14.101076735Z stderr F I1107 17:19:14.100948       1 controller.go:85] Starting OpenAPI V3 controller
+2023-11-07T17:19:14.101080638Z stderr F I1107 17:19:14.100980       1 naming_controller.go:291] Starting NamingConditionController
+2023-11-07T17:19:14.101083465Z stderr F I1107 17:19:14.100994       1 establishing_controller.go:76] Starting EstablishingController
+2023-11-07T17:19:14.101119689Z stderr F I1107 17:19:14.101017       1 nonstructuralschema_controller.go:192] Starting NonStructuralSchemaConditionController
+2023-11-07T17:19:14.101123425Z stderr F I1107 17:19:14.101052       1 apiapproval_controller.go:186] Starting KubernetesAPIApprovalPolicyConformantConditionController
+2023-11-07T17:19:14.101126376Z stderr F I1107 17:19:14.101066       1 crd_finalizer.go:266] Starting CRDFinalizer
+2023-11-07T17:19:14.101360207Z stderr F I1107 17:19:14.101294       1 crdregistration_controller.go:111] Starting crd-autoregister controller
+2023-11-07T17:19:14.101371735Z stderr F I1107 17:19:14.101305       1 shared_informer.go:255] Waiting for caches to sync for crd-autoregister
+2023-11-07T17:19:14.112177697Z stderr F I1107 17:19:14.112042       1 controller.go:616] quota admission added evaluator for: namespaces
+2023-11-07T17:19:14.169637884Z stderr F I1107 17:19:14.169535       1 controller.go:616] quota admission added evaluator for: leases.coordination.k8s.io
+2023-11-07T17:19:14.183028483Z stderr F I1107 17:19:14.182789       1 shared_informer.go:262] Caches are synced for node_authorizer
+2023-11-07T17:19:14.190306373Z stderr F I1107 17:19:14.190221       1 cache.go:39] Caches are synced for autoregister controller
+2023-11-07T17:19:14.190324393Z stderr F I1107 17:19:14.190227       1 cache.go:39] Caches are synced for AvailableConditionController controller
+2023-11-07T17:19:14.190327431Z stderr F I1107 17:19:14.190232       1 shared_informer.go:262] Caches are synced for cluster_authentication_trust_controller
+2023-11-07T17:19:14.190330082Z stderr F I1107 17:19:14.190220       1 cache.go:39] Caches are synced for APIServiceRegistrationController controller
+2023-11-07T17:19:14.19033275Z stderr F I1107 17:19:14.190255       1 apf_controller.go:305] Running API Priority and Fairness config worker
+2023-11-07T17:19:14.201588301Z stderr F I1107 17:19:14.201508       1 shared_informer.go:262] Caches are synced for crd-autoregister
+2023-11-07T17:19:14.92532668Z stderr F I1107 17:19:14.925237       1 controller.go:132] OpenAPI AggregationController: action for item k8s_internal_local_delegation_chain_0000000000: Nothing (removed from the queue).
+2023-11-07T17:19:15.094634843Z stderr F I1107 17:19:15.094532       1 storage_scheduling.go:95] created PriorityClass system-node-critical with value 2000001000
+2023-11-07T17:19:15.101541223Z stderr F I1107 17:19:15.101419       1 storage_scheduling.go:95] created PriorityClass system-cluster-critical with value 2000000000
+2023-11-07T17:19:15.101576578Z stderr F I1107 17:19:15.101451       1 storage_scheduling.go:111] all system priority classes are created successfully or already exist.
+2023-11-07T17:19:15.389003967Z stderr F I1107 17:19:15.388924       1 controller.go:616] quota admission added evaluator for: roles.rbac.authorization.k8s.io
+2023-11-07T17:19:15.420732479Z stderr F I1107 17:19:15.420670       1 controller.go:616] quota admission added evaluator for: rolebindings.rbac.authorization.k8s.io
+2023-11-07T17:19:15.529985722Z stderr F I1107 17:19:15.529861       1 alloc.go:327] "allocated clusterIPs" service="default/kubernetes" clusterIPs=map[IPv4:10.96.0.1]
+2023-11-07T17:19:15.535036795Z stderr F W1107 17:19:15.534962       1 lease.go:250] Resetting endpoints for master service "kubernetes" to [172.18.0.3]
+2023-11-07T17:19:15.535762008Z stderr F I1107 17:19:15.535669       1 controller.go:616] quota admission added evaluator for: endpoints
+2023-11-07T17:19:15.538069623Z stderr F I1107 17:19:15.537975       1 controller.go:616] quota admission added evaluator for: endpointslices.discovery.k8s.io
+2023-11-07T17:19:16.966186417Z stderr F I1107 17:19:16.966056       1 controller.go:616] quota admission added evaluator for: serviceaccounts
+2023-11-07T17:19:16.971822503Z stderr F I1107 17:19:16.971747       1 controller.go:616] quota admission added evaluator for: deployments.apps
+2023-11-07T17:19:16.991911743Z stderr F I1107 17:19:16.991814       1 alloc.go:327] "allocated clusterIPs" service="kube-system/kube-dns" clusterIPs=map[IPv4:10.96.0.10]
+2023-11-07T17:19:16.997138781Z stderr F I1107 17:19:16.997050       1 controller.go:616] quota admission added evaluator for: daemonsets.apps
+2023-11-07T17:19:30.636631533Z stderr F I1107 17:19:30.636580       1 controller.go:616] quota admission added evaluator for: controllerrevisions.apps
+2023-11-07T17:19:31.437843967Z stderr F I1107 17:19:31.437759       1 controller.go:616] quota admission added evaluator for: replicasets.apps
+2023-11-07T17:19:35.264754789Z stderr F I1107 17:19:35.264654       1 alloc.go:327] "allocated clusterIPs" service="zora-system/zora-metrics" clusterIPs=map[IPv4:10.96.149.98]
+2023-11-07T17:19:37.271533863Z stderr F I1107 17:19:37.271381       1 controller.go:616] quota admission added evaluator for: clusters.zora.undistro.io
+2023-11-07T17:19:37.301190285Z stderr F I1107 17:19:37.301093       1 controller.go:616] quota admission added evaluator for: clusterscans.zora.undistro.io
+2023-11-07T17:19:37.307415925Z stderr F I1107 17:19:37.307333       1 controller.go:616] quota admission added evaluator for: plugins.zora.undistro.io
+2023-11-07T17:19:59.350370357Z stderr F I1107 17:19:59.350301       1 controller.go:616] quota admission added evaluator for: cronjobs.batch
