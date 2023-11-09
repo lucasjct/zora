@@ -1,0 +1,20 @@
+2023-11-09T18:21:35.68016197Z stderr F I1109 18:21:35.679976       1 node.go:163] Successfully retrieved node IP: 172.18.0.2
+2023-11-09T18:21:35.680189999Z stderr F I1109 18:21:35.680055       1 server_others.go:138] "Detected node IP" address="172.18.0.2"
+2023-11-09T18:21:35.699114096Z stderr F I1109 18:21:35.698894       1 server_others.go:206] "Using iptables Proxier"
+2023-11-09T18:21:35.699125642Z stderr F I1109 18:21:35.698925       1 server_others.go:213] "kube-proxy running in dual-stack mode" ipFamily=IPv4
+2023-11-09T18:21:35.699128467Z stderr F I1109 18:21:35.698932       1 server_others.go:214] "Creating dualStackProxier for iptables"
+2023-11-09T18:21:35.699132648Z stderr F I1109 18:21:35.698947       1 server_others.go:501] "Detect-local-mode set to ClusterCIDR, but no IPv6 cluster CIDR defined, , defaulting to no-op detect-local for IPv6"
+2023-11-09T18:21:35.699135351Z stderr F I1109 18:21:35.698978       1 proxier.go:262] "Setting route_localnet=1, use nodePortAddresses to filter loopback addresses for NodePorts to skip it https://issues.k8s.io/90259"
+2023-11-09T18:21:35.700581858Z stderr F I1109 18:21:35.699104       1 proxier.go:262] "Setting route_localnet=1, use nodePortAddresses to filter loopback addresses for NodePorts to skip it https://issues.k8s.io/90259"
+2023-11-09T18:21:35.700600257Z stderr F I1109 18:21:35.699267       1 server.go:661] "Version info" version="v1.25.3"
+2023-11-09T18:21:35.700604853Z stderr F I1109 18:21:35.699276       1 server.go:663] "Golang settings" GOGC="" GOMAXPROCS="" GOTRACEBACK=""
+2023-11-09T18:21:35.700608946Z stderr F I1109 18:21:35.699623       1 conntrack.go:100] "Set sysctl" entry="net/netfilter/nf_conntrack_tcp_timeout_close_wait" value=3600
+2023-11-09T18:21:35.700612358Z stderr F I1109 18:21:35.699751       1 config.go:226] "Starting endpoint slice config controller"
+2023-11-09T18:21:35.700615387Z stderr F I1109 18:21:35.699760       1 shared_informer.go:255] Waiting for caches to sync for endpoint slice config
+2023-11-09T18:21:35.700618571Z stderr F I1109 18:21:35.699794       1 config.go:317] "Starting service config controller"
+2023-11-09T18:21:35.700621654Z stderr F I1109 18:21:35.699798       1 shared_informer.go:255] Waiting for caches to sync for service config
+2023-11-09T18:21:35.703295405Z stderr F I1109 18:21:35.702214       1 config.go:444] "Starting node config controller"
+2023-11-09T18:21:35.703325083Z stderr F I1109 18:21:35.702239       1 shared_informer.go:255] Waiting for caches to sync for node config
+2023-11-09T18:21:35.800715536Z stderr F I1109 18:21:35.800620       1 shared_informer.go:262] Caches are synced for service config
+2023-11-09T18:21:35.800742292Z stderr F I1109 18:21:35.800620       1 shared_informer.go:262] Caches are synced for endpoint slice config
+2023-11-09T18:21:35.802973703Z stderr F I1109 18:21:35.802917       1 shared_informer.go:262] Caches are synced for node config

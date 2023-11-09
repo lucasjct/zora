@@ -1,7 +1,0 @@
-# Delete namespace zora-system
-apiVersion: kuttl.dev/v1beta1
-kind: TestStep
-delete:  
-- apiVersion: v1
-  kind: Namespace
-  name:  zora-system

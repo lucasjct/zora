@@ -1,0 +1,7 @@
+apiVersion: kuttl.dev/v1beta1
+kind: TestAssert
+phase: Running
+commands:
+  - command: helm list -n zora-system
+    ignoreFailure: true
+  - command: helm get notes zora -n zora-system

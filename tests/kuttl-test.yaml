@@ -3,8 +3,8 @@ kind: TestSuite
 startKIND: true
 commands:
   - script: sh -c bash/install-zora.sh
-kindNodeCache: true
+kindNodeCache: false
 testDirs:
 - ./tests/integration/
 timeout: 60
-artifactsDir: ./output/
+artifactsDir: ./output/ 

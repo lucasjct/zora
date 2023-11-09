@@ -1,7 +1,0 @@
-# Not should be zora-operator. Test errors define states that should not be reached.
-apiVersion: v1
-kind: Pod
-metadata:
-  name: zora-operator
-status:
-  phase: Succeeded

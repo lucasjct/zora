@@ -1,0 +1,5 @@
+2023-11-09T17:28:00.425692557Z stderr F {"level":"info","ts":"2023-11-09T17:28:00Z","logger":"controller-runtime.metrics","msg":"Metrics server is starting to listen","addr":"127.0.0.1:8080"}
+2023-11-09T17:28:00.430718478Z stderr F {"level":"info","ts":"2023-11-09T17:28:00Z","logger":"setup","msg":"starting manager"}
+2023-11-09T17:28:00.430937996Z stderr F {"level":"info","ts":"2023-11-09T17:28:00Z","msg":"Starting server","kind":"health probe","addr":"[::]:8081"}
+2023-11-09T17:28:00.531756666Z stderr F {"level":"info","ts":"2023-11-09T17:28:00Z","msg":"starting server","path":"/metrics","kind":"metrics","addr":"127.0.0.1:8080"}
+2023-11-09T17:28:00.531777879Z stderr F I1109 17:28:00.531695       1 leaderelection.go:245] attempting to acquire leader lease zora-system/e0f4eef4.zora.undistro.io...
