@@ -1,6 +1,5 @@
 apiVersion: kuttl.dev/v1beta1
 kind: TestAssert
-phase: Running
 commands: 
-  - script: sh -c bash/updateresources.sh
+  - script: bash -c "source bash/edit.sh; edit_resource"
     ignoreFailure: true

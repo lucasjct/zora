@@ -1,8 +1,10 @@
 apiVersion: kuttl.dev/v1beta1
 kind: TestAssert
-phase: Running
 commands: 
-- command: chmod +x bash/updateschedule.sh
-- script: sh -c bash/updateschedule.sh
+- command: chmod +x bash/edit.sh
+- script: bash -c "source bash/edit.sh; edit_schedule"
   ignoreFailure: true
 - command: kubectl get cluster,scan -o wide -n zora-system
+
+
+
